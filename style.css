@@ -383,3 +383,55 @@ h3 {
 .carta-aberta .assinatura {
     color: #3b3026;
 }
+/* FINAL DO SITE ❤️ */
+
+.final {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 60px 20px;
+}
+
+.final p {
+    max-width: 650px;
+    line-height: 1.8;
+    margin: 12px auto;
+}
+
+.coracao-final {
+    font-size: 55px;
+    margin: 25px 0;
+    animation: pulsar 1.8s infinite;
+}
+
+@keyframes pulsar {
+    0%, 100% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.15);
+    }
+}
+
+.frase-final-site {
+    margin-top: 35px !important;
+    font-size: 20px;
+}
+
+.fim {
+    margin-top: 60px;
+}
+
+.fim h3 {
+    font-size: 25px;
+    margin-bottom: 15px;
+}
+
+.fim p {
+    opacity: 0.8;
+    font-style: italic;
+}
