@@ -435,3 +435,131 @@ h3 {
     opacity: 0.8;
     font-style: italic;
 }
+/* =========================================
+   PERSONALIZAÇÃO DO SITE ❤️
+   ========================================= */
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+/* Títulos */
+
+h1,
+h2,
+h3 {
+    letter-spacing: 0.5px;
+}
+
+/* Pequeno detalhe abaixo dos títulos */
+
+.secao h2 {
+    position: relative;
+    display: inline-block;
+    margin-bottom: 25px;
+}
+
+.secao h2::after {
+    content: "♡";
+    display: block;
+    font-size: 18px;
+    margin-top: 8px;
+    opacity: 0.7;
+}
+
+/* Textos */
+
+.secao p {
+    line-height: 1.9;
+}
+
+/* Separadores */
+
+.linha {
+    width: 80px;
+    height: 1px;
+    margin: 35px auto;
+    position: relative;
+}
+
+.linha::before {
+    content: "♡";
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    padding: 0 12px;
+    font-size: 18px;
+}
+
+/* Botões */
+
+button {
+    border: none;
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+button:hover {
+    transform: translateY(-3px);
+}
+
+button:active {
+    transform: scale(0.97);
+}
+
+/* Entrada suave das seções */
+
+.secao {
+    animation: aparecerSecao 1s ease;
+}
+
+@keyframes aparecerSecao {
+    from {
+        opacity: 0;
+        transform: translateY(25px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Pequenos corações flutuantes */
+
+.coracoes::before,
+.coracoes::after {
+    content: "♡  ♥  ♡";
+    position: fixed;
+    font-size: 16px;
+    opacity: 0.12;
+    pointer-events: none;
+    z-index: 0;
+}
+
+.coracoes::before {
+    top: 20%;
+    left: 8%;
+    animation: flutuar 6s ease-in-out infinite;
+}
+
+.coracoes::after {
+    bottom: 20%;
+    right: 8%;
+    animation: flutuar 7s ease-in-out infinite reverse;
+}
+
+@keyframes flutuar {
+    0%, 100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-20px);
+    }
+}
