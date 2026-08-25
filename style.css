@@ -216,3 +216,45 @@ h3 {
     margin: 12px auto;
     line-height: 1.8;
 }
+/* NOSSO UNIVERSO 🌌 */
+
+.universo {
+    position: relative;
+    overflow: hidden;
+    background: #080b18;
+    min-height: 100vh;
+}
+
+.universo::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-image:
+        radial-gradient(circle, rgba(255,255,255,0.9) 1px, transparent 1px),
+        radial-gradient(circle, rgba(255,255,255,0.6) 1px, transparent 1px);
+    background-size: 90px 90px, 140px 140px;
+    background-position: 20px 30px, 60px 80px;
+    opacity: 0.35;
+    animation: estrelas 8s linear infinite;
+}
+
+.universo > * {
+    position: relative;
+    z-index: 1;
+}
+
+@keyframes estrelas {
+    from {
+        transform: translateY(0);
+    }
+
+    to {
+        transform: translateY(-40px);
+    }
+}
+
+.universo p {
+    max-width: 650px;
+    margin: 12px auto;
+    line-height: 1.8;
+}
