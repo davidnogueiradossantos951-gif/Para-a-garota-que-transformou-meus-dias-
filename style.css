@@ -141,3 +141,37 @@ h3 {
 .foto-aliancas img:hover {
     transform: scale(1.04);
 }
+.frase-aliancas {
+    max-width: 650px;
+    margin: 25px auto 10px;
+    font-size: clamp(24px, 5vw, 38px);
+    font-weight: normal;
+    color: #f3c6dc;
+    line-height: 1.4;
+}
+
+.texto-aliancas {
+    max-width: 650px;
+    margin: 15px auto 30px;
+    color: #d6cbd3;
+    font-size: 17px;
+    line-height: 1.9;
+}
+
+.foto-aliancas {
+    animation: aparecerFoto 1.5s ease;
+}
+
+@keyframes aparecerFoto {
+
+    from {
+        opacity: 0;
+        transform: scale(0.92) translateY(25px);
+    }
+
+    to {
+        opacity: 1;
+        transform: scale(1) translateY(0);
+    }
+
+}
