@@ -12,7 +12,9 @@ function entrarNaHistoria() {
 
 function proximaParte() {
 
-    alert("Essa parte ainda vai ser escrita... ❤️");
+    document.getElementById("parte2").scrollIntoView({
+        behavior: "smooth"
+    });
 
 }
 
