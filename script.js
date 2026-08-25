@@ -42,3 +42,10 @@ function abrirCarta() {
     document.getElementById("cartaAberta").style.display = "block";
 
 }
+function fimDaHistoria() {
+
+    document.getElementById("parte4").scrollIntoView({
+        behavior: "smooth"
+    });
+
+}
