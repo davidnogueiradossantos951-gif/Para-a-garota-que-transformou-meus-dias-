@@ -192,3 +192,15 @@ h3 {
     font-size: 42px;
     font-weight: 700;
 }
+.segunda-parte {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.segunda-parte p {
+    max-width: 600px;
+    margin: 15px auto;
+    line-height: 1.8;
+}
