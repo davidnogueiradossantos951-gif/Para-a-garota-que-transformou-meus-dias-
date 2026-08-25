@@ -612,3 +612,39 @@ button:active {
         transform: translateY(0);
     }
 }
+/* FOTO DAS ALIANÇAS 💍 */
+
+.foto-aliancas {
+    margin: 35px auto;
+    width: min(90%, 500px);
+    padding: 10px;
+    background: rgba(255, 255, 255, 0.08);
+    border-radius: 14px;
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.25);
+    overflow: hidden;
+    animation: fotoEntrando 1.2s ease;
+}
+
+.foto-aliancas img {
+    display: block;
+    width: 100%;
+    height: auto;
+    border-radius: 9px;
+    transition: transform 0.5s ease;
+}
+
+.foto-aliancas img:hover {
+    transform: scale(1.03);
+}
+
+@keyframes fotoEntrando {
+    from {
+        opacity: 0;
+        transform: translateY(30px) scale(0.96);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0) scale(1);
+    }
+}
