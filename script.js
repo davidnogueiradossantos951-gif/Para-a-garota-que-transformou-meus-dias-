@@ -1,5 +1,9 @@
 function entrarNaHistoria() {
 
+    const musica = document.getElementById("musica");
+
+    musica.play();
+
     document.getElementById("historia").scrollIntoView({
         behavior: "smooth"
     });
@@ -11,6 +15,7 @@ function proximaParte() {
     alert("Essa parte ainda vai ser escrita... ❤️");
 
 }
+
 function atualizarContador() {
 
     const inicio = new Date(2026, 5, 10);
