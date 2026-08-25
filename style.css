@@ -687,3 +687,12 @@ button:active {
     margin-bottom: 10px;
     text-transform: uppercase;
 }
+/* SEPARADORES DOS CAPÍTULOS 📖 */
+
+.separador {
+    margin: 20px auto 30px;
+    font-size: 13px;
+    letter-spacing: 2px;
+    opacity: 0.65;
+    text-align: center;
+}
