@@ -374,3 +374,12 @@ h3 {
         transform: scale(1) translateY(0);
     }
 }
+.carta-aberta {
+    color: #3b3026;
+}
+
+.carta-aberta h3,
+.carta-aberta p,
+.carta-aberta .assinatura {
+    color: #3b3026;
+}
