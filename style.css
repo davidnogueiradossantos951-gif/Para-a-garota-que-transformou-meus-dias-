@@ -696,3 +696,56 @@ button:active {
     opacity: 0.65;
     text-align: center;
 }
+/* BOTÕES ROMÂNTICOS ❤️ */
+
+button {
+    position: relative;
+    padding: 13px 28px;
+    border-radius: 30px;
+    border: 1px solid rgba(255, 255, 255, 0.25);
+    background: rgba(255, 255, 255, 0.08);
+    color: inherit;
+    font-size: 15px;
+    font-weight: 500;
+    letter-spacing: 0.3px;
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+    transition: all 0.35s ease;
+    overflow: hidden;
+}
+
+/* brilho passando pelo botão */
+
+button::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 70%;
+    height: 100%;
+    background: linear-gradient(
+        90deg,
+        transparent,
+        rgba(255, 255, 255, 0.18),
+        transparent
+    );
+    transition: left 0.6s ease;
+}
+
+button:hover::before {
+    left: 130%;
+}
+
+/* efeito ao passar o mouse */
+
+button:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.22);
+}
+
+/* efeito ao tocar */
+
+button:active {
+    transform: scale(0.96);
+}
