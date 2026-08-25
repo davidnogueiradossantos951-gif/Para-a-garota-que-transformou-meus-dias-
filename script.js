@@ -49,3 +49,10 @@ function fimDaHistoria() {
     });
 
 }
+function irParaFinal() {
+
+    document.getElementById("parte5").scrollIntoView({
+        behavior: "smooth"
+    });
+
+}
