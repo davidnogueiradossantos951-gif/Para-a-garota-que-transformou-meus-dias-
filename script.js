@@ -34,3 +34,11 @@ function atualizarContador() {
 }
 
 atualizarContador();
+
+function abrirCarta() {
+
+    document.getElementById("carta").style.display = "none";
+
+    document.getElementById("cartaAberta").style.display = "block";
+
+}
