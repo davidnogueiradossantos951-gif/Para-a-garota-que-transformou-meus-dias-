@@ -648,3 +648,32 @@ button:active {
         transform: translateY(0) scale(1);
     }
 }
+/* ANIMAÇÃO DO PRIMEIRO CAPÍTULO 📖 */
+
+#historia h2 {
+    animation: aparecerTexto 1s ease;
+}
+
+#historia > p {
+    animation: aparecerTexto 1.2s ease;
+}
+
+.frase-aliancas {
+    animation: aparecerTexto 1.4s ease;
+}
+
+.texto-aliancas {
+    animation: aparecerTexto 1.6s ease;
+}
+
+@keyframes aparecerTexto {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
