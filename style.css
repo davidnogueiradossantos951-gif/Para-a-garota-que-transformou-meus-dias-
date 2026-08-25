@@ -175,3 +175,20 @@ h3 {
     }
 
 }
+.contador {
+    margin: 25px 0;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+}
+
+.contador span {
+    font-size: 15px;
+    opacity: 0.8;
+}
+
+.contador strong {
+    font-size: 42px;
+    font-weight: 700;
+}
