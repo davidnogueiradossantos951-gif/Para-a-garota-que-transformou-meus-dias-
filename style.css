@@ -204,3 +204,15 @@ h3 {
     margin: 15px auto;
     line-height: 1.8;
 }
+.universo {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.universo p {
+    max-width: 650px;
+    margin: 12px auto;
+    line-height: 1.8;
+}
