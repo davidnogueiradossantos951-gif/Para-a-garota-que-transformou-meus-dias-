@@ -563,3 +563,52 @@ button:active {
         transform: translateY(-20px);
     }
 }
+/* DETALHE DA TELA INICIAL ❤️ */
+
+.pequeno {
+    display: inline-block;
+    letter-spacing: 3px;
+    font-size: 12px;
+    margin-bottom: 18px;
+    animation: aparecerInicial 1.5s ease;
+}
+
+.inicio h1 {
+    animation: aparecerTitulo 1.5s ease 0.2s both;
+}
+
+.inicio p {
+    animation: aparecerTitulo 1.5s ease 0.5s both;
+}
+
+.contador {
+    animation: aparecerTitulo 1.5s ease 0.7s both;
+}
+
+.inicio button {
+    animation: aparecerTitulo 1.5s ease 0.9s both;
+}
+
+@keyframes aparecerInicial {
+    from {
+        opacity: 0;
+        letter-spacing: 8px;
+    }
+
+    to {
+        opacity: 1;
+        letter-spacing: 3px;
+    }
+}
+
+@keyframes aparecerTitulo {
+    from {
+        opacity: 0;
+        transform: translateY(15px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
